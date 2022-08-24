@@ -1,0 +1,134 @@
++++ ./a/usr/share/mime/packages/freedesktop.org.xml
+--- ./b/usr/share/mime/packages/freedesktop.org.xml
+@@ -33262,55 +33262,6 @@
+     <sub-class-of type="text/x-verilog"/>
+     <glob pattern="*.sv"/>
+   </mime-type>
+-  <mime-type type="text/x-vhdl">
+-    <comment>VHDL source code</comment>
+-    <comment xml:lang="zh_TW">VHDL 源碼</comment>
+-    <comment xml:lang="zh_CN">VHDL 源代码</comment>
+-    <comment xml:lang="uk">вихідний код мовою VHDL</comment>
+-    <comment xml:lang="tr">VHDL kaynak kodu</comment>
+-    <comment xml:lang="sv">VHDL-källkod</comment>
+-    <comment xml:lang="sr">ВХДЛ изворни код</comment>
+-    <comment xml:lang="sl">Datoteka izvorne kode VHDL</comment>
+-    <comment xml:lang="sk">Zdrojový kód VHDL</comment>
+-    <comment xml:lang="ru">Исходный код VHDL</comment>
+-    <comment xml:lang="pt_BR">Código-fonte VHDL</comment>
+-    <comment xml:lang="pt">código origem VHDL</comment>
+-    <comment xml:lang="pl">Kod źródłowy VHDL</comment>
+-    <comment xml:lang="oc">còde font VHDL</comment>
+-    <comment xml:lang="nl">VHDL broncode</comment>
+-    <comment xml:lang="lv">VHDL pirmkods</comment>
+-    <comment xml:lang="ko">VHDL 소스 코드</comment>
+-    <comment xml:lang="kk">VHDL бастапқы коды</comment>
+-    <comment xml:lang="ja">VHDL ソースコード</comment>
+-    <comment xml:lang="it">Codice sorgente VHDL</comment>
+-    <comment xml:lang="id">Kode sumber VHDL</comment>
+-    <comment xml:lang="ia">Codice-fonte VHDL</comment>
+-    <comment xml:lang="hu">VHDL-forráskód</comment>
+-    <comment xml:lang="hr">VHDL izvorni kôd</comment>
+-    <comment xml:lang="he">קוד מקור של VHDL</comment>
+-    <comment xml:lang="gl">código fonte en VHDL</comment>
+-    <comment xml:lang="ga">cód foinseach VHDL</comment>
+-    <comment xml:lang="fur">codiç sorzint VHDL</comment>
+-    <comment xml:lang="fr">code source VHDL</comment>
+-    <comment xml:lang="fi">VHDL-lähdekoodi</comment>
+-    <comment xml:lang="eu">VHDL iturburu-kodea</comment>
+-    <comment xml:lang="es">código fuente en VHDL</comment>
+-    <comment xml:lang="eo">VHDL-fontkodo</comment>
+-    <comment xml:lang="en_GB">VHDL source code</comment>
+-    <comment xml:lang="el">Πηγαίος κώδικας VHDL</comment>
+-    <comment xml:lang="de">VHDL-Quelltext</comment>
+-    <comment xml:lang="da">VHDL-kildekode</comment>
+-    <comment xml:lang="cs">zdrojový kód v jazyce VHDL</comment>
+-    <comment xml:lang="ca">codi font en VHDL</comment>
+-    <comment xml:lang="bg">Изходен код — VHDL</comment>
+-    <comment xml:lang="ar">شفرة مصدر VHDL</comment>
+-    <comment xml:lang="af">VHDL-bronkode</comment>
+-    <acronym>VHDL</acronym>
+-    <expanded-acronym>Very-High-Speed Integrated Circuit Hardware Description Language</expanded-acronym>
+-    <sub-class-of type="text/plain"/>
+-    <glob pattern="*.vhd"/>
+-    <glob pattern="*.vhdl"/>
+-  </mime-type>
+   <mime-type type="text/enriched">
+     <comment>enriched text document</comment>
+     <comment xml:lang="zh_TW">豐富化文字文件</comment>
+@@ -43362,20 +43313,6 @@
+       <match type="string" value="*NINTENDO-HVC*" offset="1"/>
+     </magic>
+   </mime-type>
+-  <mime-type type="application/ovf">
+-    <comment>OVF disk image</comment>
+-    <acronym>OVF</acronym>
+-    <expanded-acronym>Open Virtualization Format</expanded-acronym>
+-    <glob pattern="*.ova"/>
+-    <magic priority="60">
+-      <match type="string" value=".ovf" offset="1:256">
+-        <match type="string" value="ustar\0" offset="257"/>
+-        <match type="string" value="ustar\040\040\0" offset="257"/>
+-      </match>
+-    </magic>
+-    <alias type="application/x-virtualbox-ova"/>
+-    <sub-class-of type="application/x-tar"/>
+-  </mime-type>
+   <mime-type type="application/x-qed-disk">
+     <comment>QEMU QED disk image</comment>
+     <acronym>QED</acronym>
+@@ -43421,53 +43358,6 @@
+       </match>
+     </magic>
+   </mime-type>
+-  <mime-type type="application/x-vhd-disk">
+-    <comment>VHD disk image</comment>
+-    <acronym>VHD</acronym>
+-    <expanded-acronym>Virtual Hard Disk</expanded-acronym>
+-    <glob pattern="*.vhd"/>
+-    <glob pattern="*.vpc"/>
+-    <magic>
+-      <match type="string" value="conectix" offset="0"/>
+-    </magic>
+-    <alias type="application/x-virtualbox-vhd"/>
+-  </mime-type>
+-  <mime-type type="application/x-vhdx-disk">
+-    <comment>VHDX disk image</comment>
+-    <acronym>VHDX</acronym>
+-    <expanded-acronym>Virtual Hard Disk v2</expanded-acronym>
+-    <glob pattern="*.vhdx"/>
+-    <magic>
+-      <match type="string" value="vhdxfile" offset="0"/>
+-    </magic>
+-    <alias type="application/x-virtualbox-vhdx"/>
+-  </mime-type>
+-  <mime-type type="application/x-vmdk-disk">
+-    <comment>VMDK disk image</comment>
+-    <acronym>VMDK</acronym>
+-    <expanded-acronym>Virtual Machine Disk</expanded-acronym>
+-    <glob pattern="*.vmdk"/>
+-    <magic>
+-      <match type="string" value="KDMV\x01\x00\x00\x00" offset="0"/>
+-      <match type="string" value="KDMV\x02\x00\x00\x00" offset="0"/>
+-    </magic>
+-    <alias type="application/x-virtualbox-vmdk"/>
+-  </mime-type>
+-  <mime-type type="application/x-vdi-disk">
+-    <comment>VDI disk image</comment>
+-    <acronym>VDI</acronym>
+-    <expanded-acronym>Virtual Disk Image</expanded-acronym>
+-    <glob pattern="*.vdi"/>
+-    <magic>
+-      <match type="string" value="&lt;&lt;&lt; QEMU VM Virtual Disk Image &gt;&gt;&gt;\n" offset="0"/>
+-      <match type="string" value="&lt;&lt;&lt; Oracle VM VirtualBox Disk Image &gt;&gt;&gt;\n" offset="0"/>
+-      <match type="string" value="&lt;&lt;&lt; Sun VirtualBox Disk Image &gt;&gt;&gt;\n" offset="0"/>
+-      <match type="string" value="&lt;&lt;&lt; Sun xVM VirtualBox Disk Image &gt;&gt;&gt;\n" offset="0"/>
+-      <match type="string" value="&lt;&lt;&lt; innotek VirtualBox Disk Image &gt;&gt;&gt;" offset="0"/>
+-      <match type="string" value="&lt;&lt;&lt; CloneVDI VirtualBox Disk Image &gt;&gt;&gt;\n" offset="0"/>
+-    </magic>
+-    <alias type="application/x-virtualbox-vdi"/>
+-  </mime-type>
+   <mime-type type="application/x-appleworks-document">
+     <comment>AppleWorks document</comment>
+     <comment xml:lang="zh_TW">AppleWorks 文件</comment>
+

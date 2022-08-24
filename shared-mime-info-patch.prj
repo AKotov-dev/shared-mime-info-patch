@@ -1,0 +1,68 @@
+[NAME]
+name=shared-mime-info-patch
+
+[VERSION]
+version=0.1
+
+[RELEASE]
+release=0.mrx9
+
+[GROUP]
+group=Applications/File
+
+[DESCRIPTION]
+0=Patch for shared-mime-info (Mageia-9 only)
+
+[MAINTAINER]
+maintainer=Alex Kotov
+
+[VENDOR]
+vendor=alex_q_2000 (C) 2022
+
+[SUMMARY]
+summary=Patch for shared-mime-info (Mageia-9 only)
+
+[URLCOPY]
+urlcopy=https://github.com/AKotov-dev/drakclock-patch
+
+[LICENSE]
+license=GPLv3
+
+[DEPS]
+deps=shared-mime-info patch
+
+[META]
+meta=0
+
+[NOARCH]
+noarch=1
+
+[SIGN]
+sign=0
+
+[DEB]
+deb=0
+
+[FILES]
+0=/usr/share/mime/packages/freedesktop.org.xml.patch
+
+[AFTERINSTALL]
+0=cd /usr/share/mime/packages && patch -Ni freedesktop.org.xml.patch && update-mime-database /usr/share/mime
+
+[BEFOREREMOVE]
+0=cd /usr/share/mime/packages && patch -Ri freedesktop.org.xml.patch && update-mime-database /usr/share/mime
+
+[URL32]
+url32=
+
+[URL64]
+url64=
+
+[PROGRAMNAME]
+programname=
+
+[DEVTOOL]
+devtool=
+
+[TOOLVERSION]
+toolversion=
