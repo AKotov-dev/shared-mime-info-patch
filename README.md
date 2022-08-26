@@ -10,9 +10,7 @@ Issue: https://gitlab.freedesktop.org/xdg/shared-mime-info/-/issues/188
 **Similar programs:** [adwaita-mime-patch](https://github.com/AKotov-dev/adwaita-mime-patch)
 
 Icons before the patch:
-
 ![](https://github.com/AKotov-dev/shared-mime-info-patch/blob/main/ScreenShots/before-patch.png)
 
 Icons after the patch:
-
 ![](https://github.com/AKotov-dev/shared-mime-info-patch/blob/main/ScreenShots/after-patch.png)
